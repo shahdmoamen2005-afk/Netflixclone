@@ -1,20 +1,874 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: black;
+    /* display: block; */
 }
+
 .home{
     width: 100%;
     height: 100vh;
     background-image: url("../p1.jpg");
     background-size:100% 100%;
-
-
 }
 .home .black{
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    position: relative;
 }
 
+.home .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fffbfc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 .home .black nav{
     background-color: transparent !important;
+}
+.home .btn{
+    width: 80px;
+    height: 40px;
+    background-color: #dc030f;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    border: #dc030f solid 1px;
+    border-radius: 0px;
+    font-weight: 800px;
+    font-size: 15;
+}
+.home .btn:hover{
+    background-color: #bf0812;
+}
+.main {
+    background-color: #111;
+    color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+}
+.main-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    width: 40%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 1.4rem;
+}
+.main-content h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px;
+  
+}
+
+.main-content p{
+    color: white;
+    margin: 10px 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px;
+
+}
+.main .Email-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .Email-box input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+    font-size: 1rem;
+    padding: 15px;
+    width: 65%;
+}
+
+.Email-box .my-btn {
+   background-color: #e50914; 
+    color: white;
+    height: 55px;
+    padding: 0 24px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+    
+}
+.Email-box .my-btn:hover {
+    background-color: #bf0812;
+}
+
+ .signup {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #212121;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .net-box {
+      background-color: #292929;
+      padding: 40px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(32, 32, 32, 0.5);
+      color: white;
+    }
+
+    .net-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: white;
+    }
+  .net-box label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .net-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: white;
+    }
+
+    .net-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e50914;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .net-box button:hover {
+      background-color: #b20710;
+    }
+
+    .net-box .account-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  .net-box .account-link a {
+      color: #e50914;
+      text-decoration: none;
+    }
+
+    .net-box .account-link a:hover {
+      text-decoration: underline;
+    }
+    .login {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #212121;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background-color: #292929;
+      padding: 40px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(32, 32, 32, 0.5);
+      color: white;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: white;
+    }
+  .login-box label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: white;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e50914;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #b20710;
+    }
+
+    .login-box .account-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  .login-box .account-link a {
+      color: #e50914;
+      text-decoration: none;
+    }
+
+    .login-box .account-link a:hover {
+      text-decoration: underline;
+    }
+    .account {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #212121;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .red-box {
+      background-color: #292929;
+      padding: 40px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(32, 32, 32, 0.5);
+      color: white;
+    }
+
+    .red-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: white;
+    }
+  .red-box label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .red-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: white;
+    }
+
+    .red-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e50914;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .red-box button:hover {
+      background-color: #b20710;
+    }
+
+    .red-box .signup-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  .red-box .signup-link a {
+      color: #e50914;
+      text-decoration: none;
+    }
+
+    .red-box .signup-link a:hover {
+      text-decoration: underline;
+    }
+
+  .feature-section {
+    background-color: black;
+    padding: 70px 45px;
+    color: white;
+    border-bottom: 8px solid #222; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.feature-text h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.feature-text h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.feature-img {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-img img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.story-section {
+    background-color: black;
+    padding: 70px 45px;
+    color: white;
+    border-bottom: 8px solid #222; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.story-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.story-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.story-text h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.story-text p {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.story-img {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.story-img img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-section {
+    background-color: black;
+    padding: 70px 45px;
+    color: white;
+    border-bottom: 8px solid #222; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.text h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.text p {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.text-img {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.text-img img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.child-section {
+    background-color: black;
+    padding: 70px 45px;
+    color: white;
+    border-bottom: 8px solid #222; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.child-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.child-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.child-text h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.child-text p {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.child-img {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.child-img img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.faq-container {
+    max-width: 815px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.faq-heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+    border: none;
+}
+.accordion-item {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.accordion-button {
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 1.5rem;
+    padding: 24px;
+    border: none;
+    box-shadow: none;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-button:hover {
+    background-color: #414141;
+    color: white;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #414141;
+    color: white;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+}
+
+.accordion-body {
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 1.5rem;
+    padding: 24px;
+    margin-top: 1px;
+}
+.accordion-button::after {
+    background-image: none;
+    content: '+';
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(45deg);
+}
+.email-signup-container {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 60px;
+    color:white;
+}
+.ready-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+}
+.email-box {
+    flex-grow: 1;
+    max-width: 450px; 
+}
+
+.email-box input {
+    height: 55px;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+.btn-netflix {
+   background-color: #e50914; 
+    color: white;
+    height: 55px;
+    padding: 0 24px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-netflix:hover {
+    background-color: #c11119;
+}
+.chevron {
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 300;
+}
+.site-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 45px; 
+    color: #737373; 
+    font-size: 13px;
+}
+
+.footer-container {
+    width: 100%;
+}
+a {
+    color: #737373;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.footer-top {
+    margin-bottom: 30px;
+}
+
+
+.footer-links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 12px 0; 
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    margin-bottom: 4px;
+    padding-right: 12px;
+}
+.footer-country {
+    margin-top: 24px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 992px) {
+    
+    
+    .main-content {
+        width: 80%; 
+    }
+    .main-content h1 {
+        font-size: 2.5rem;
+    }
+
+    
+    .feature-container, 
+    .story-container, 
+    .text-container, 
+    .child-container {
+        flex-direction: column; 
+    }
+
+    .feature-text, 
+    .story-text, 
+    .text, 
+    .child-text {
+        padding-right: 0;
+        padding-bottom: 20px;
+        flex: auto;
+    }
+
+    .feature-text h1, 
+    .story-text h1, 
+    .text h1, 
+    .child-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .feature-img, 
+    .story-img, 
+    .text-img, 
+    .child-img {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .feature-img img, 
+    .story-img img, 
+    .text-img img, 
+    .child-img img {
+        width: 80%; 
+        max-width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* --- Navbar --- */
+    .home .navbar-brand {
+        font-size: 1.2rem;
+    }
+    .home .btn {
+        padding: 0.2rem 0.4rem;
+        font-size: 12px;
+        width: auto;
+        height: auto;
+    }
+
+    
+    .main-content {
+        width: 95%; 
+        padding: 10px;
+    }
+    .main-content h1 {
+        font-size: 1.8rem; 
+    }
+    .main-content p {
+        font-size: 1rem;
+    }
+
+    .main .Email-box form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .main .Email-box input {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 45px;
+    }
+    .Email-box .my-btn {
+        width: 150px; 
+        justify-content: center;
+        height: 45px;
+        font-size: 1rem;
+    }
+    .feature-section, 
+    .story-section, 
+    .text-section, 
+    .child-section {
+        padding: 40px 15px; 
+    }
+
+    .feature-text h1, 
+    .story-text h1, 
+    .text h1, 
+    .child-text h1 {
+        font-size: 1.8rem; 
+    }
+    
+    .feature-img img, 
+    .story-img img, 
+    .text-img img, 
+    .child-img img {
+        width: 100%; 
+    }
+    .faq-heading {
+        font-size: 1.8rem;
+    }
+    .accordion-button, .accordion-body {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    
+    .email-form {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .email-box {
+        width: 100%;
+        max-width: 100%;
+    }
+    .btn-netflix {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr); 
+    .site-footer {
+        padding: 40px 20px;
+    }
+    .signup, 
+    .account {
+        height: auto;           
+        min-height: 100vh;      
+        padding: 20px 0;       
+        display: flex;
+        align-items: flex-start; 
+        padding-top: 10vh;       
+    }
+    .net-box, 
+    .red-box {
+        width: 90%;             
+        max-width: 100%;
+        padding: 25px 20px;     
+        margin: 0 auto;         
+    }
+
+    
+    .net-box h2, 
+    .red-box h2 {
+        font-size: 1.5rem;     
+        margin-bottom: 20px;
+    }
+
+  
+    .net-box input, 
+    .red-box input {
+        padding: 14px;         
+        font-size: 16px;       
+    }
+
+    .net-box button, 
+    .red-box button {
+        padding: 14px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .signup, 
+    .account {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center; 
+    }
+}
 }
